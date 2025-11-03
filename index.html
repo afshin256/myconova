@@ -3,151 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مایکونُوا - نسل نو بسترهای مغذی قارچ</title>
-  <meta name="description" content="مایکونُوا، توسعه‌دهنده فرمول پیشرفته‌ی بارورسازی بسترهای غیرآلی قارچ (MGF-01). افزایش عملکرد رشد، کاهش ضایعات و پایداری زیستی در صنعت قارچ." />
-  <!-- لینک به فایل CSS — در پاسخ بعدی اضافه خواهد شد -->
+  <title>MycoNova | آینده پرورش قارچ در بسترهای مصنوعی</title>
+  <meta name="description" content="فرمول انحصاری MGF-01 مایکونووا، نخستین محلول مغذی با خاصیت ضدآلودگی برای رشد قارچ بدون کمپوست و بدون استریل — از شهر تا فضا." />
+  <!-- فونت فارسی -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <!-- CSS خواهد آمد در پاسخ بعدی -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Language Switcher -->
   <div class="lang-switcher">
-    <button onclick="setLanguage('fa')" aria-label="تغییر زبان به فارسی">فارسی</button>
-    <button onclick="setLanguage('en')" aria-label="Switch to English">EN</button>
+    <button onclick="setLang('fa')" aria-label="تغییر زبان به فارسی">فارسی</button>
+    <button onclick="setLang('en')" aria-label="Switch to English">EN</button>
   </div>
 
   <!-- Hero Section -->
-  <header id="hero" class="section hero">
+  <header class="hero" id="hero">
     <div class="container">
-      <h1 class="headline">مایکونُوا - انقلاب در رشد قارچ</h1>
-      <p class="subheadline">فرمول اختصاصی MGF-01 برای بارورسازی بسترهای غیرآلی و افزایش عملکرد رشد قارچ‌ها</p>
-      <div class="cta-buttons">
-        <a href="#about" class="btn">درباره ما</a>
-        <a href="mailto:info@myconova.ir" class="btn btn-outline">درخواست همکاری</a>
+      <h1 class="hero-title">🔬 MycoNova | آینده پرورش قارچ در بسترهای مصنوعی</h1>
+      <p class="hero-subtitle">نوآوری در تغذیه میسلیوم – از زمین تا فضا</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn">درباره محصول</a>
+        <a href="#contact" class="btn">تماس با ما</a>
+        <a href="mailto:info@myconova.ir?subject=درخواست%20بروشور%20فنی&body=لطفا%20نسخه%20بروشور%20فنی%20MGF-01%20را%20ارسال%20فرمایید." class="btn btn-outline">دانلود بروشور فنی</a>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="section content">
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="headline">درباره مایکونُوا</h2>
-      <div class="content-wrapper">
-        <p class="text">مایکونُوا (MycoNova) تیمی از پژوهشگران و فناوران زیستی است که با هدف بازتعریف بسترهای رشد قارچ تأسیس شده است. فرمول اختصاصی ما، MGF-01، با ترکیب دقیق مواد معدنی، عناصر کمیاب و بهینه‌سازی ویژگی‌های غیرآلی بستر، امکان رشد سریع‌تر و سالم‌تر قارچ‌ها را در محیط‌های کنترل‌شده و نیمه‌صنعتی فراهم می‌کند.</p>
-        <div class="image-placeholder" data-img="about"></div>
+      <h2 class="section-title">معرفی مایکونووا</h2>
+      <div class="section-content">
+        <p>مایکونووا حاصل سال‌ها تحقیق و آزمایش در زمینه رشد قارچ در بسترهای مصنوعی و غیرآلی است.</p>
+        <p>فرمول انحصاری MGF-01، نخستین محلول مغذی با خاصیت ضدآلودگی است که می‌تواند رشد میسلیوم قارچ‌های خوراکی و دارویی را بدون نیاز به کمپوست یا محیط استریل، تنها بر روی بسترهایی مانند پشم‌سنگ، لیکا، پریلیت و پلی‌استر ممکن سازد.</p>
+        <p>این نوآوری، نقطه‌ آغازی برای نسل جدیدی از کشاورزی پایدار، کنترل‌شده و حتی کشاورزی فضایی است.</p>
       </div>
     </div>
   </section>
 
-  <!-- Technology Section -->
-  <section id="technology" class="section content">
+  <!-- Features Section -->
+  <section id="features" class="section bg-light">
     <div class="container">
-      <h2 class="headline">فرمول MGF-01 چیست؟</h2>
-      <div class="content-wrapper reverse">
-        <p class="text">MGF-01 حاصل بیش از دو سال تحقیق در زمینه تعاملات زیستی قارچ با مواد معدنی است. این فرمول باعث افزایش ظرفیت نگهداری رطوبت، تنظیم pH بستر، و فراهم‌سازی عناصر مغذی کلیدی بدون افزودن مواد آلی می‌شود. در نتیجه، قارچ‌ها رشد یکنواخت‌تر، ریشه‌دوانی بهتر و دوره برداشت کوتاه‌تری دارند.</p>
-        <div class="image-placeholder" data-img="technology"></div>
+      <h2 class="section-title">چرا MGF-01؟</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚫</div>
+          <h3>ضد آلودگی قارچی و میکروبی</h3>
+          <p>رشد انتخابی میسلیوم بدون رقابت با کپک‌ها.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💧</div>
+          <h3>کاهش مصرف آب و انرژی</h3>
+          <p>حذف فرآیندهای سنگین تولید کمپوست.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3>سازگار با بسترهای مصنوعی</h3>
+          <p>پلی‌استر، پریلیت، پشم‌سنگ، لیکا و دیگر مواد خنثی.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>قابل استفاده در محیط‌های غیرخاکی</h3>
+          <p>برای کشاورزی شهری، بیابانی یا فضایی.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♻️</div>
+          <h3>بازیافت‌پذیر و چندمرحله‌ای</h3>
+          <p>امکان کشت دوم و تبدیل بستر استفاده‌شده به خوراک دامی یا آبزی.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Applications Section -->
-  <section id="applications" class="section content">
+  <!-- Applications -->
+  <section id="applications" class="section">
     <div class="container">
-      <h2 class="headline">کاربردها</h2>
-      <div class="content-wrapper">
-        <p class="text">فرمول MGF-01 برای پرورش‌دهندگان قارچ خوراکی، تولیدکنندگان بستر صنعتی، و مراکز تحقیقاتی طراحی شده است. این محصول قابلیت ادغام با خطوط تولید موجود را دارد و می‌تواند به عنوان افزودنی پیش‌مخلوط در بسترهای فعلی نیز استفاده شود.</p>
-        <div class="image-placeholder" data-img="applications"></div>
+      <h2 class="section-title">کاربردهای فرمول MGF-01</h2>
+      <div class="section-content">
+        <p>فرمول MGF-01 نه تنها در صنایع پرورش قارچ‌های خوراکی (دکمه‌ای، صدفی، گانودرما و...) کارایی دارد، بلکه می‌تواند به‌عنوان بستر تحقیقاتی در پروژه‌های زیر نیز مورد استفاده قرار گیرد:</p>
+        <ul>
+          <li>پژوهش‌های کشاورزی فضایی (ESA، NASA، Space Tango)</li>
+          <li>توسعه سیستم‌های تولید پایدار در محیط‌های کنترل‌شده (CEA)</li>
+          <li>تولید خوراک دامی از باقیمانده‌های کشت</li>
+          <li>آموزش و پژوهش در مراکز دانشگاهی</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <footer id="contact" class="section footer">
+  <!-- Results -->
+  <section id="results" class="section bg-light">
     <div class="container">
-      <h2 class="headline">تماس با ما</h2>
-      <p class="text">برای همکاری، دریافت نمونه یا اطلاعات فنی با ما در تماس باشید:</p>
-      <p><strong>ایمیل:</strong> <a href="mailto:info@myconova.ir">info@myconova.ir</a></p>
-      <p><strong>مکان:</strong> ایران</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/company/myconova" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/myconova" target="_blank" rel="noopener">GitHub</a>
+      <h2 class="section-title">از زمین تا فضا – تأیید عملکرد در محیط‌های غیرزمینی</h2>
+      <div class="section-content">
+        <p>فرمول MGF-01 در آزمایشی میدانی با همکاری یکی از اعضای دانشگاه صنعتی شریف، در خاک شبیه‌سازی‌شده ماه مورد آزمایش قرار گرفت و توانست رشد کامل میسلیوم را بدون آلودگی نشان دهد. این موفقیت، گامی مهم در توسعه فناوری‌های زیستی برای کشاورزی فضایی است.</p>
+        <a href="mailto:info@myconova.ir?subject=درخواست%20مستندات%20آزمایش&body=لطفا%20مستندات%20آزمایش%20MGF-01%20در%20خاک%20ماه%20را%20ارسال%20فرمایید." class="btn">مشاهده مستندات آزمایش</a>
       </div>
-      <a href="mailto:info@myconova.ir" class="btn btn-outline cta-button">درخواست همکاری</a>
+    </div>
+  </section>
+
+  <!-- Collaboration -->
+  <section id="collaboration" class="section">
+    <div class="container">
+      <h2 class="section-title">به ما بپیوندید</h2>
+      <div class="section-content">
+        <p>مایکونووا آماده‌ی همکاری با سرمایه‌گذاران، مراکز تحقیقاتی، شرکت‌های کشاورزی و صنایع تولید خوراک است تا این فناوری را به مرحله‌ی تولید صنعتی و جهانی برساند. برای دریافت اطلاعات محرمانه و نسخه‌ی فنی محصول، لطفاً از طریق فرم تماس اقدام نمایید.</p>
+        <div class="hero-buttons">
+          <a href="mailto:info@myconova.ir?subject=درخواست%20همکاری&body=علاقه‌مند%20به%20همکاری%20در%20پروژه‌های%20MGF-01%20هستم." class="btn">درخواست همکاری</a>
+          <a href="mailto:info@myconova.ir" class="btn btn-outline">تماس مستقیم</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery (Optional - Placeholder) -->
+  <section id="gallery" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">گالری تصاویر</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">📷 رشد میسلیوم</div>
+        <div class="gallery-item">📷 بستر آزمایشی (پشم‌سنگ)</div>
+        <div class="gallery-item">📷 قارچ برداشت‌شده</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>© 2025 MycoNova | All rights reserved.</p>
+      <p>طراحی و توسعه توسط تیم تحقیقاتی MycoNova.</p>
+      <p>📧 <a href="mailto:info@myconova.ir">info@myconova.ir</a> | 🌐 <a href="https://myconova.ir" target="_blank" rel="noopener">www.myconova.ir</a></p>
     </div>
   </footer>
 
-  <!-- Simple JS for language switch (minimal, no framework) -->
+  <!-- Language Switching Logic -->
   <script>
     const translations = {
       fa: {
-        title: "مایکونُوا - نسل نو بسترهای مغذی قارچ",
-        metaDesc: "مایکونُوا، توسعه‌دهنده فرمول پیشرفته‌ی بارورسازی بسترهای غیرآلی قارچ (MGF-01). افزایش عملکرد رشد، کاهش ضایعات و پایداری زیستی در صنعت قارچ.",
-        heroHeadline: "مایکونُوا - انقلاب در رشد قارچ",
-        heroSubheadline: "فرمول اختصاصی MGF-01 برای بارورسازی بسترهای غیرآلی و افزایش عملکرد رشد قارچ‌ها",
-        aboutHeadline: "درباره مایکونُوا",
-        aboutText: "مایکونُوا (MycoNova) تیمی از پژوهشگران و فناوران زیستی است که با هدف بازتعریف بسترهای رشد قارچ تأسیس شده است. فرمول اختصاصی ما، MGF-01، با ترکیب دقیق مواد معدنی، عناصر کمیاب و بهینه‌سازی ویژگی‌های غیرآلی بستر، امکان رشد سریع‌تر و سالم‌تر قارچ‌ها را در محیط‌های کنترل‌شده و نیمه‌صنعتی فراهم می‌کند.",
-        techHeadline: "فرمول MGF-01 چیست؟",
-        techText: "MGF-01 حاصل بیش از دو سال تحقیق در زمینه تعاملات زیستی قارچ با مواد معدنی است. این فرمول باعث افزایش ظرفیت نگهداری رطوبت، تنظیم pH بستر، و فراهم‌سازی عناصر مغذی کلیدی بدون افزودن مواد آلی می‌شود. در نتیجه، قارچ‌ها رشد یکنواخت‌تر، ریشه‌دوانی بهتر و دوره برداشت کوتاه‌تری دارند.",
-        appsHeadline: "کاربردها",
-        appsText: "فرمول MGF-01 برای پرورش‌دهندگان قارچ خوراکی، تولیدکنندگان بستر صنعتی، و مراکز تحقیقاتی طراحی شده است. این محصول قابلیت ادغام با خطوط تولید موجود را دارد و می‌تواند به عنوان افزودنی پیش‌مخلوط در بسترهای فعلی نیز استفاده شود.",
-        contactHeadline: "تماس با ما",
-        contactText: "برای همکاری، دریافت نمونه یا اطلاعات فنی با ما در تماس باشید:",
-        btnAbout: "درباره ما",
-        btnCollab: "درخواست همکاری"
+        title: "MycoNova | آینده پرورش قارچ در بسترهای مصنوعی",
+        desc: "فرمول انحصاری MGF-01 مایکونووا، نخستین محلول مغذی با خاصیت ضدآلودگی برای رشد قارچ بدون کمپوست و بدون استریل — از شهر تا فضا.",
+        heroTitle: "🔬 MycoNova | آینده پرورش قارچ در بسترهای مصنوعی",
+        heroSubtitle: "نوآوری در تغذیه میسلیوم – از زمین تا فضا",
+        btnProduct: "درباره محصول",
+        btnContact: "تماس با ما",
+        btnBrochure: "دانلود بروشور فنی",
+        aboutTitle: "معرفی مایکونووا",
+        featuresTitle: "چرا MGF-01؟",
+        appsTitle: "کاربردهای فرمول MGF-01",
+        resultsTitle: "از زمین تا فضا – تأیید عملکرد در محیط‌های غیرزمینی",
+        collabTitle: "به ما بپیوندید",
+        galleryTitle: "گالری تصاویر",
+        antiContam: "ضد آلودگی قارچی و میکروبی",
+        waterEnergy: "کاهش مصرف آب و انرژی",
+        synthetic: "سازگار با بسترهای مصنوعی",
+        soilless: "قابل استفاده در محیط‌های غیرخاکی",
+        recyclable: "بازیافت‌پذیر و چندمرحله‌ای",
+        btnReport: "مشاهده مستندات آزمایش",
+        btnCollab: "درخواست همکاری",
+        btnDirect: "تماس مستقیم"
       },
       en: {
-        title: "MycoNova – The Next Generation of Fungal Substrates",
-        metaDesc: "MycoNova introduces MGF-01, a novel inorganic substrate enrichment formula that enhances mushroom growth performance, reduces waste, and supports sustainable cultivation.",
-        heroHeadline: "MycoNova – Innovation in Mushroom Growth",
-        heroSubheadline: "Exclusive formula MGF-01 for enriching inorganic substrates and boosting fungal growth efficiency.",
-        aboutHeadline: "About MycoNova",
-        aboutText: "MycoNova is a biotechnology-driven research team redefining the foundation of mushroom cultivation. Our proprietary formula, MGF-01, combines optimized inorganic materials and trace elements to accelerate growth and improve yield consistency.",
-        techHeadline: "What is MGF-01?",
-        techText: "MGF-01 is the result of intensive research on fungal–mineral interactions. It enhances moisture retention, stabilizes pH, and delivers essential micronutrients without relying on organic additives — leading to faster colonization and shorter harvest cycles.",
-        appsHeadline: "Applications",
-        appsText: "MGF-01 is designed for commercial mushroom growers, substrate manufacturers, and research institutions. It can be seamlessly integrated into existing production lines or used as a pre-mix additive in current substrate formulations.",
-        contactHeadline: "Contact Us",
-        contactText: "For collaboration, samples, or technical data, reach us at:",
-        btnAbout: "About Us",
-        btnCollab: "Collaboration Request"
+        title: "MycoNova | Redefining the Future of Mushroom Cultivation",
+        desc: "MGF-01 is the first anti-contamination nutrient solution enabling mushroom growth without compost or sterilization — from urban farms to space missions.",
+        heroTitle: "🔬 MycoNova | Redefining the Future of Mushroom Cultivation",
+        heroSubtitle: "Innovating Mycelium Nutrition — From Earth to Space",
+        btnProduct: "About MGF-01",
+        btnContact: "Contact",
+        btnBrochure: "Download Technical Brochure",
+        aboutTitle: "About MycoNova",
+        featuresTitle: "Why MGF-01?",
+        appsTitle: "Applications of MGF-01",
+        resultsTitle: "From Earth to Space – Validated in Lunar Simulant",
+        collabTitle: "Join the Revolution",
+        galleryTitle: "Gallery",
+        antiContam: "Anti-microbial and selective growth",
+        waterEnergy: "Reduced water and energy consumption",
+        synthetic: "Compatible with synthetic & inert media",
+        soilless: "Ideal for soil-free or extraterrestrial environments",
+        recyclable: "Recyclable – Dual-stage cultivation",
+        btnReport: "View Experimental Report",
+        btnCollab: "Collaboration Inquiry",
+        btnDirect: "Direct Contact"
       }
     };
 
-    function setLanguage(lang) {
+    function setLang(lang) {
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
 
-      // Update texts
+      // Update page metadata
       document.title = translations[lang].title;
-      document.querySelector('meta[name="description"]').content = translations[lang].metaDesc;
+      document.querySelector('meta[name="description"]').content = translations[lang].desc;
 
-      document.querySelector('#hero .headline').textContent = translations[lang].heroHeadline;
-      document.querySelector('#hero .subheadline').textContent = translations[lang].heroSubheadline;
-      document.querySelectorAll('.cta-buttons .btn')[0].textContent = translations[lang].btnAbout;
-      document.querySelectorAll('.cta-buttons .btn')[1].textContent = translations[lang].btnCollab;
+      // Update content
+      document.querySelector('.hero-title').textContent = translations[lang].heroTitle;
+      document.querySelector('.hero-subtitle').textContent = translations[lang].heroSubtitle;
+      document.querySelectorAll('.hero-buttons .btn')[0].textContent = translations[lang].btnProduct;
+      document.querySelectorAll('.hero-buttons .btn')[1].textContent = translations[lang].btnContact;
+      document.querySelectorAll('.hero-buttons .btn')[2].textContent = translations[lang].btnBrochure;
 
-      document.querySelector('#about .headline').textContent = translations[lang].aboutHeadline;
-      document.querySelector('#about .text').textContent = translations[lang].aboutText;
+      document.querySelector('#about .section-title').textContent = translations[lang].aboutTitle;
+      document.querySelector('#features .section-title').textContent = translations[lang].featuresTitle;
+      document.querySelector('#applications .section-title').textContent = translations[lang].appsTitle;
+      document.querySelector('#results .section-title').textContent = translations[lang].resultsTitle;
+      document.querySelector('#collaboration .section-title').textContent = translations[lang].collabTitle;
+      document.querySelector('#gallery .section-title').textContent = translations[lang].galleryTitle;
 
-      document.querySelector('#technology .headline').textContent = translations[lang].techHeadline;
-      document.querySelector('#technology .text').textContent = translations[lang].techText;
+      // Feature cards
+      const featureTexts = [
+        translations[lang].antiContam,
+        translations[lang].waterEnergy,
+        translations[lang].synthetic,
+        translations[lang].soilless,
+        translations[lang].recyclable
+      ];
+      document.querySelectorAll('.feature-card h3').forEach((el, i) => {
+        el.textContent = featureTexts[i];
+      });
 
-      document.querySelector('#applications .headline').textContent = translations[lang].appsHeadline;
-      document.querySelector('#applications .text').textContent = translations[lang].appsText;
-
-      document.querySelector('#contact .headline').textContent = translations[lang].contactHeadline;
-      document.querySelector('#contact .text').textContent = translations[lang].contactText;
-      document.querySelector('.cta-button').textContent = translations[lang].btnCollab;
+      // Buttons
+      document.querySelector('#results .btn').textContent = translations[lang].btnReport;
+      document.querySelectorAll('#collaboration .btn')[0].textContent = translations[lang].btnCollab;
+      document.querySelectorAll('#collaboration .btn')[1].textContent = translations[lang].btnDirect;
 
       // Save preference
       localStorage.setItem('myconova-lang', lang);
     }
 
-    // Load saved language or detect default
+    // On load
     document.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('myconova-lang') || 
-                        (navigator.language.startsWith('fa') ? 'fa' : 'en');
-      setLanguage(savedLang);
+      const saved = localStorage.getItem('myconova-lang') || 
+                    (navigator.language.startsWith('fa') ? 'fa' : 'en');
+      setLang(saved);
     });
   </script>
 </body>
