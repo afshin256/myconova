@@ -41,7 +41,7 @@ const translations = {
             "Achieved complete mycelial growth of button and oyster mushrooms without reliance on conventional composts, across a variety of synthetic and organic substrates;",
             "Successfully conducted outdoor mycelium runs in natural garden environments—without any protective equipment or contamination-prevention infrastructure;",
             "Demonstrated strong anti-contamination resistance through extensive field trials;",
-            "Successfully cultivated mycelium in simulated lunar soil, as requested by Sharif University of Technology (Iran);",
+            "Successfully cultivated mycelium in simulated lunar soil, At the request of one of Iran’s top-tier universities;",
             "Validated the potential to produce Rich-nutrient for livestock and fish feed from spent cultivation substrate;",
             "Significantly reduced production costs and water consumption."
         ],
@@ -72,8 +72,7 @@ const translations = {
         teamName: "MycoFlair Research & Innovation Team",
         teamIntro: "The MycoFlair team comprises researchers and technologists with extensive experience in developing advanced biological and agricultural solutions, as well as next-generation space sciences.",
         teamMembers: [
-            { name: "Ismaeel Khorshidi - B.Sc. in Genetics.", title: "Senior Researcher and Scientific Supervisor.", image: "ismaeel khorshidi.jpg" },
-            { name: "Masoome Khani - M.Sc. in Astrophysics - Ph.D. Student in Condensed Matter Physics.", title: "Researcher in the Field of Space Exploration (Specifically the Moon).", image: "masoome khani.jpg" },
+            { name: "Ismaeel Khorshidi - B.Sc. in Genetics.", title: "Researcher, Founder, and Owner of MGF-02 Technology.", image: "ismaeel khorshidi.jpg" },
             { name: "Amir Marandi - M.A in Marketing Management.", title: "Director of Business Development and international partnership.", image: "amir marandi.jpg" },
             { name: "Saeid Khorshidi - M.A. in Law.", title: "Biological Systems Designer and Legal Supervisor.", image: "saeid khorshidi.jpg" }
         ],
@@ -83,7 +82,6 @@ const translations = {
         contactIntro: "For technical information, research documentation, or collaboration inquiries, please contact us via the details below:",
         contactEmail: 'Email: <a href="mailto:info@mycoflair.ir">info@mycoflair.ir</a>',
         contactPhone: 'Phone: <a href="tel:+989123092855">+989123092855</a>',
-        // Removed LinkedIn entry
         footerCopyright: "© 2025 MycoFlair Research & Innovation Team. All rights reserved.",
         footerDomain: "MycoFlair.ir"
     },
@@ -129,7 +127,7 @@ const translations = {
             "دستیابی به رشد کامل میسلیوم قارچ‌های دکمه‌ای و صدفی بدون نیاز به کمپوست‌های مرسوم فعلی، در انواع بسترهای مصنوعی و آلی؛",
             "اجرای موفقیت‌آمیز میسلیوم‌رانی در محیط طبیعی (باغ) بدون استفاده از هر‌گونه تجهیزات حفاظتی برای جلوگیری از آلودگی بستر کشت؛",
             "اثبات مقاومت بالا در برابر آلودگی‌ها در آزمایش‌های میدانی؛",
-            "موفقیت در آزمایش پرورش میسلیوم در خاک شبیه‌سازی‌شده ماه، به درخواست دانشگاه صنعتی شریف (ایران)؛",
+            "موفقیت در آزمایش پرورش میسلیوم در خاک شبیه‌سازی‌شده ماه، به درخواست یکی از دانشگاه های تراز اول ایران ؛",
             "تأیید امکان تولید خوراک غنی برای دام و ماهی از پسماند بستر کشت؛",
             "کاهش چشمگیر هزینه‌های تولید و مصرف آب."
         ],
@@ -160,8 +158,7 @@ const translations = {
         teamName: "تیم تحقیقاتی و نوآوری مایکوفلر:",
         teamIntro: "تیم مایکوفلر از پژوهشگران و فناورانی تشکیل شده است که تجربه‌ی ارزشمندی در توسعه‌ی راه‌حل‌های زیستی و کشاورزی پیشرفته، همچنین علوم فضایی نوین دارند.",
         teamMembers: [
-            { name: "اسماعیل خورشیدی - کارشناسی ژنتیک.", title: "پژوهشگر ارشد و سرپرست علمی.", image: "ismaeel khorshidi.jpg" },
-            { name: "معصومه خانی - کارشناسی ارشد اخترفیزیک - دانشجوی دکترای فیزیک ماده چگال.", title: "پژوهشگر در حوزه اکتشافات فضایی (به طور خاص ماه).", image: "masoome khani.jpg" },
+            { name: "اسماعیل خورشیدی - کارشناسی ژنتیک.", title: "پژوهشگر، بنیان‌گذار و مالک فناوری  MGF-02.", image: "ismaeel khorshidi.jpg" },
             { name: "امیر مرندی - کارشناسی ارشد مدیریت بازرگانی.", title: "مدیر توسعه تجاری و همکاری‌های بین‌المللی.", image: "amir marandi.jpg" },
             { name: "سعید خورشیدی - کارشناسی ارشد حقوق.", title: "طراح سامانه‌های بیولوژیکی و سرپرست حقوقی.", image: "saeid khorshidi.jpg" }
         ],
@@ -171,7 +168,6 @@ const translations = {
         contactIntro: "برای دریافت اطلاعات فنی، مستندات پژوهشی یا هماهنگی جهت همکاری، لطفاً از طریق اطلاعات زیر با ما در تماس باشید:",
         contactEmail: 'ایمیل: <a href="mailto:info@mycoflair.ir">info@mycoflair.ir</a>',
         contactPhone: 'تلفن: <a href="tel:+989123092855">+989123092855</a>',
-        // Removed LinkedIn entry
         footerCopyright: "© 2025 تیم تحقیقاتی و نوآوری مایکوفلر. کلیه حقوق محفوظ است.",
         footerDomain: "MycoFlair.ir"
     }
@@ -366,7 +362,6 @@ function updateContent() {
     document.getElementById('contact-intro').textContent = lang.contactIntro;
     document.getElementById('contact-email').innerHTML = lang.contactEmail;
     document.getElementById('contact-phone').innerHTML = lang.contactPhone;
-    // No LinkedIn update needed — completely omitted
 
     document.getElementById('footer-copyright').textContent = lang.footerCopyright;
     document.getElementById('footer-domain').textContent = lang.footerDomain;

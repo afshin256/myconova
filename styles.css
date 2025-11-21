@@ -96,7 +96,7 @@ body {
 .mobile-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 1rem); /* اصلاح: منو زیر هدر قرار می‌گیرد */
+    top: calc(100% + 1rem);
     right: 2rem;
     background: white;
     box-shadow: var(--shadow);
@@ -104,8 +104,8 @@ body {
     padding: 0.8rem;
     z-index: 999;
     flex-direction: column;
-    gap: 0.2rem; /* کاهش فاصله بین آیتم‌ها */
-    min-width: 180px; /* کاهش عرض برای موبایل */
+    gap: 0.2rem;
+    min-width: 180px;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
 }
@@ -114,14 +114,14 @@ body {
     animation: fadeIn 0.3s ease-out;
 }
 .mobile-menu .nav-link {
-    padding: 0.6rem 1rem; /* کاهش padding عمودی */
+    padding: 0.6rem 1rem;
     text-align: center;
     border-radius: 8px;
     width: 100%;
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
-    font-size: 1rem; /* کاهش سایز فونت */
+    font-size: 1rem;
     transition: var(--transition);
     white-space: nowrap;
     overflow: hidden;
@@ -143,7 +143,7 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 80px; /* فاصله بالایی برای هدر ثابت */
+    margin-top: 80px;
 }
 .hero-content {
     max-width: 900px;
@@ -260,6 +260,12 @@ body {
     gap: 2rem;
     margin-top: 2rem;
 }
+/* ✅ تغییر اعمال شده: فقط در دسکتاپ (min-width: 1024px) به 3 ستون */
+@media (min-width: 1024px) {
+    .team-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* Contact Section */
 .contact-section {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
@@ -311,13 +317,13 @@ body {
     .hero h1 { font-size: 2.2rem; }
     .section-title { font-size: 1.9rem; }
     .header { padding: 1rem; }
-    .site-title { font-size: 1rem; } /* کوچکتر شده برای موبایل */
+    .site-title { font-size: 1rem; }
     .language-switch { padding: 0.5rem 1rem; font-size: 1rem; }
     .cards-container { grid-template-columns: 1fr; }
     .team-cards { grid-template-columns: 1fr; }
     .right-nav {
-        flex-direction: column-reverse; /* اصلاح: دکمه سوییچ زبان بالاتر، همبرگر پایین‌تر */
-        align-items: flex-end; /* یا flex-start برای RTL */
+        flex-direction: column-reverse;
+        align-items: flex-end;
         gap: 0.5rem;
     }
     .logo-placeholder {
@@ -349,7 +355,7 @@ body {
 }
 @media (max-width: 768px) {
     [dir="rtl"] .right-nav {
-        align-items: flex-start; /* برای RTL */
+        align-items: flex-start;
     }
 }
 [dir="rtl"] ul {
